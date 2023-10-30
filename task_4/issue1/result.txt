@@ -1,0 +1,34 @@
+Command:
+python -m doctest -o NORMALIZE_WHITESPACE -v doctest_morse.py >> result.txt
+
+
+Output:
+Trying:
+    encode('SOS')
+Expecting:
+    '... --- ...'
+ok
+Trying:
+    encode('LID')
+Expecting:
+    '.-.. .. -..'
+ok
+Trying:
+    encode('sos')
+Expecting:
+    Traceback (most recent call last):
+    KeyError: 's'
+ok
+Trying:
+    encode(65)
+Expecting:
+    Traceback (most recent call last):
+    TypeError: 'int' object is not iterable
+ok
+1 items had no tests:
+    doctest_morse
+1 items passed all tests:
+   4 tests in doctest_morse.encode
+4 tests in 2 items.
+4 passed and 0 failed.
+Test passed.
