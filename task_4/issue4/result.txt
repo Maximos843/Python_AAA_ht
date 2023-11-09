@@ -1,0 +1,20 @@
+Command:
+python -m pytest -v pytest_one_hot.py > result.txt
+
+
+Output:
+============================= test session starts ==============================
+platform darwin -- Python 3.9.7, pytest-6.2.4, py-1.10.0, pluggy-0.13.1 -- /opt/anaconda3/bin/python
+cachedir: .pytest_cache
+rootdir: /Users/maksimselestov/Documents/AAA_Python/Python_AAA_ht/task_4/issue4
+plugins: anyio-2.2.0
+collecting ... collected 6 items
+
+pytest_one_hot.py::test_args_list_str PASSED                             [ 16%]
+pytest_one_hot.py::test_args_str PASSED                                  [ 33%]
+pytest_one_hot.py::test_args_list_int PASSED                             [ 50%]
+pytest_one_hot.py::test_args_list_float PASSED                           [ 66%]
+pytest_one_hot.py::test_args_empty PASSED                                [ 83%]
+pytest_one_hot.py::test_args_floats PASSED                               [100%]
+
+============================== 6 passed in 0.03s ===============================
