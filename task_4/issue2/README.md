@@ -6,4 +6,4 @@
 Для запуска тестов ввести команду:
 
 
-python -m pytest -v pytest_morse.py
+pytest -v test_morse.py

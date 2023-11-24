@@ -6,4 +6,4 @@
 Для запуска тестов ввести команду:
 
 
-python -m unittest -v unittest_one_hot.py
+python -m unittest -v test_one_hot.py

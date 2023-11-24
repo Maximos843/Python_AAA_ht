@@ -26,7 +26,21 @@ MORSE_TO_LETTER = {
 
 def encode(message: str) -> str:
     """
-    Кодирует строку в соответсвие с таблицей азбуки Морзе
+    Encodes a string according to the Morse code table
+
+    >>> encode('SO   S') #doctest: +NORMALIZE_WHITESPACE
+    '... --- ...'
+    >>> encode('LID')
+    '.-.. .. -..'
+    >>> encode('L  I V') #doctest: +NORMALIZE_WHITESPACE
+    '.-.. .. ...-'
+    >>> encode('sos')
+    Traceback (most recent call last):
+    KeyError: 's'
+    >>> encode(65)
+    Traceback (most recent call last):
+    TypeError: 'int' object is not iterable
+
     """
     encoded_signs = [
         LETTER_TO_MORSE[letter] for letter in message

@@ -6,4 +6,4 @@
 Для запуска тестов ввести команду:
 
 
-python -m pytest -v pytest_one_hot.py
+pytest -v test_one_hot.py

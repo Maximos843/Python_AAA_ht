@@ -1,7 +1,7 @@
-from typing import List, Tuple
+from typing import List, Tuple, Iterable
 
 
-def fit_transform(*args: str) -> List[Tuple[str, List[int]]]:
+def fit_transform(*args: Iterable) -> List[Tuple[str, List[int]]]:
     """
     fit_transform(iterable)
     fit_transform(arg1, arg2, *args)
