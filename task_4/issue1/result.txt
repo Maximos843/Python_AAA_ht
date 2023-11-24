@@ -1,0 +1,40 @@
+Command:
+python -m doctest -o NORMALIZE_WHITESPACE -v morse.py >> result.txt
+
+
+Output:
+Trying:
+    encode('SO   S') #doctest: +NORMALIZE_WHITESPACE
+Expecting:
+    '... --- ...'
+ok
+Trying:
+    encode('LID')
+Expecting:
+    '.-.. .. -..'
+ok
+Trying:
+    encode('L  I V') #doctest: +NORMALIZE_WHITESPACE
+Expecting:
+    '.-.. .. ...-'
+ok
+Trying:
+    encode('sos')
+Expecting:
+    Traceback (most recent call last):
+    KeyError: 's'
+ok
+Trying:
+    encode(65)
+Expecting:
+    Traceback (most recent call last):
+    TypeError: 'int' object is not iterable
+ok
+2 items had no tests:
+    morse
+    morse.decode
+1 items passed all tests:
+   5 tests in morse.encode
+5 tests in 3 items.
+5 passed and 0 failed.
+Test passed.

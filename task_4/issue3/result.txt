@@ -1,0 +1,22 @@
+Command:
+python -m unittest -v test_one_hot.py
+
+
+Output:
+test_args_empty (test_one_hot.TestOneHotEncoder)
+Test a function with empty arguments ... ok
+test_args_list_float (test_one_hot.TestOneHotEncoder)
+Test a function with arguments - list of floats ... ok
+test_args_list_int (test_one_hot.TestOneHotEncoder)
+Test a function with arguments - list of integers ... ok
+test_args_list_str (test_one_hot.TestOneHotEncoder)
+Test a function with arguments - list of strings ... ok
+test_args_str (test_one_hot.TestOneHotEncoder)
+Test a function with arguments - strings ... ok
+test_contains (test_one_hot.TestOneHotEncoder)
+Test for a function where it is checked that the element ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+OK

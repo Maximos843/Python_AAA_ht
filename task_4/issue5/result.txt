@@ -1,0 +1,16 @@
+Command:
+python -m unittest -v test_what_year.py>> result.txt
+
+
+Output:
+test_dmy_format (test_what_year.TestWhatYearNow)
+Test that checks the behavior of a function in the format DD.MM.YYYY ... ok
+test_incorrect_format (test_what_year.TestWhatYearNow)
+Test that checks the behavior of a function in the format: DD?MM?YYYY ... ok
+test_ymd_format (test_what_year.TestWhatYearNow)
+Test that checks the behavior of a function in the format YYYY-MM-DD ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+OK
